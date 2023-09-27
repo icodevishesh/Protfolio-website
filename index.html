@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquerries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Vishesh Purkait</div>
+      <div class="navbar">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><img src="assets/moon.png" id="theme-icon" onclick="toggleTheme()"></li>
+        </ul>
+      </div>
+      
+    </nav>
+
+    <!--Hamburger menu-->
+    
+  <div class="animation">
+    <nav id="hamburger-nav">
+      <div class="logo">Vishesh Purkait</div>
+      <div class="ham-icon">
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+      <img src="assets/moon.png" id="theme-icon" onclick="toggleTheme()">
+    </div>
+    </nav>
+
+    <!--Profile Section-->
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/PicsArt_09-21-12.14.17.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Vishesh Purkait</h1>
+        <p class="section__text__p2">Web Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/vishesh_purkait_resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            id=" linkdin-icon"
+            onclick="location.href='https://www.linkedin.com/in/vishesh-purkait-715348270'"
+          />
+          <img
+            src="./assets/github.png"
+            class="icon"
+            id=" github-icon"
+            onclick="location.href='https://github.com/icodevishesh' "
+          />
+        </div>
+    </section>
+  </div>
+
+    <!--about Section-->
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="assets/PicsArt_09-21-12.15.10.jpg" class="about-pic">
+        </div>
+        <div class="about-details-container">
+          <div class="about-container">
+            <div class="details-container">
+              <img src="assets/experience.png" class="icon">
+              <h3 class="about-title">Experience</h3>
+              <p>Intern at CODESOFT</p>
+            </div>
+            <div class="details-container">
+              <img src="assets/education.png" class="icon">
+              <h3 class="about-title">Education</h3>
+              <p>Bachelor's degree in computer
+                application</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>Skilled and adaptable web developer with a passion for
+              creating captivating and utilitarian online spaces. I'm efficient
+              in both front-end and back-end web development,
+              emphasizing the creation of dynamic and intuitive websites.
+              I possess exceptional creative skills and excellent time
+              management abilities, allowing me to deliver an outstanding
+              performance. I am an adaptable individual who seeks
+              self-improvement and advancement.</p>
+          </div>
+        </div>
+      </div>
+      <img src="assets/arrow.png" class="icon arrow" onclick="location.href='#skills' ">
+    </section>
+
+    <!--Skills Section-->
+
+    <section id="skills">
+      <p class="section__text__p1">Explore my</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-container">
+          <div class="details-container">
+            <h2 class="skills-sub-title">
+              Technical Skills
+            </h2>
+            <div class="article-container">
+              <article>
+                <img src="assets/checkmark.png" class="icon">
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="assets/checkmark.png" class="icon">
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="assets/checkmark.png" class="icon">
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="assets/checkmark.png" class="icon">
+                <div>
+                  <h3>MYSQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="assets/checkmark.png" class="icon">
+                <div class="django-text">
+                  <h3>Django</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="assets/checkmark.png" class="icon">
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="assets/checkmark.png" class="icon">
+                <div class="java-text">
+                  <h3>JAVA</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="assets/checkmark.png" class="icon">
+                <div class="c-text">
+                  <h3>C++</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skills-sub-title">
+              Soft Skills
+            </h2>
+            <div class="article-container">
+              <article>
+                <img src="assets/checkmark.png" class="icon">
+                <div>
+                  <h3>Time management</h3>
+                </div>
+              </article>
+              <article>
+                <img src="assets/checkmark.png" class="icon">
+                <div>
+                  <h3>Decision making</h3>
+                </div>
+              </article>
+              <article>
+                <img src="assets/checkmark.png" class="icon icon-communication">
+                <div>
+                  <h3>Communication</h3>
+                </div>
+              </article>
+              <article>
+                <img src="assets/checkmark.png" class="icon">
+                <div>
+                  <h3>Multi-tasking</h3>
+                </div>
+              </article>
+              <article>
+                <img src="assets/checkmark.png" class="icon">
+                <div>
+                  <h3>Goal oriented</h3>
+                </div>
+              </article>
+              <article>
+                <img src="assets/checkmark.png" class="icon icont-dp">
+                <div>
+                  <h3>Digital productivity</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="assets/arrow.png" class="icon arrow" onclick="location.href='#projects' ">
+    </section>
+
+    <!--project section-->
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recents</p>
+      <h1 class="title">Projects</h1>
+      <div class="skills-details-container">
+        <div class="about-container">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="assets/project-1.jpg" class="project-img">
+          </div>
+          <h2 class="skills-sub-title project-title">Project One</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/icodevishesh/CODSOFT-calculator-app.git' ">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://codsoft-vishesh-calculator-app-wef3.vercel.app' ">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="assets/project-2.jpg" class="project-img">
+          </div>
+          <h2 class="skills-sub-title project-title">Project Two</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/icodevishesh/rock-paper-scissors-game.git' ">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://rock-paper-scissors-game-vishesh.vercel.app/' ">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="assets/project-3.jpg" class="project-img">
+          </div>
+          <h2 class="skills-sub-title project-title">Project Three</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/icodevishesh/CODSOFT-landing-page.git' ">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://codsoft-landing-page-rho.vercel.app/' ">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+      <img src="assets/arrow.png" class="icon arrow" onclick="location.href='#contact' ">
+    </section>
+
+    <!--contact section-->
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="assets/email.png" class="icon contact-icon email-icon">
+          <p><a href="mailto:visheshpurkait23@gmail.com">visheshpurkait23@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="assets/linkedin.png" class="icon contact-icon"> 
+          <p><a href="https://www.linkedin.com/in/vishesh-purkait-715348270">Linkedin</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Vishesh Purkait. All rights  reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
